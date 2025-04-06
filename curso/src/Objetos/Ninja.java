@@ -8,9 +8,7 @@ public class Ninja {
     int missoes;
     int idade;
 
-    public void sharinganAtivado() {
-        System.out.println("SHARINGAN!");
-    }
+
 
     public String welcomeNinja() {
         return "Bem-vindo, eu sou ninja ";
