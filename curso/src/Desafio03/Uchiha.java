@@ -7,4 +7,7 @@ public class Uchiha extends Ninja {
         System.out.println("Jutus: " + jutsus);
     }
 
+    public void setJutsus() {
+
+    }
 }
