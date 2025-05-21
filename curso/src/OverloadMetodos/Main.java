@@ -1,4 +1,4 @@
-package overload;
+package OverloadMetodos;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,7 +6,10 @@ public class Main {
         // Obj ninja nao da pra ser criado por que é abstrato
 
         // Obj uzumaki
-        Uzumaki naruto = new Uzumaki("Naruto", "Folha", 18, 69,NivelNinja.KAGE);
+        Uzumaki naruto = new Uzumaki();
+        naruto.nome = "Naruto Uzumaki";
+        naruto.aldeia = "Aldeia da Folha";
+        naruto.idade = 16;
         naruto.habilidadeEspecial();
         naruto.estrategiaDeBatalhaNinja();
 
@@ -15,13 +18,17 @@ public class Main {
         sasuke.habilidadeEspecial();
 
         // Obj Uchiha 2®
-        Uchiha itachi = new Uchiha("Itachi uchiha", "Aldeia da folha", 25, 643, NivelNinja.KAGE);
+        Uchiha itachi = new Uchiha("Itachi Uchiha", "Aldeia da folha", 27 );
         itachi.habilidadeEspecial();
 
         // obj Uchiha 3
-        Uchiha madara = new Uchiha("Madara Uchiha", "Aldeia da folha", 45,1275, NivelNinja.KAGE);
+        Uchiha madara = new Uchiha("Madara Uchiha", "Aldeia da folha", 45,900, NivelNinja.KAGE);
         madara.habilidadeEspecial();
         madara.estrategiaDeBatalhaNinja();
+        // Metodo comum
+        madara.inteligenciaDeCombate();
+        // Metodo sobrecarregado
+        madara.inteligenciaDeCombate(90);
 
 
 
